@@ -58,15 +58,13 @@ a {
   height: 100%;
 
   gap: 0px;
-  
+
   border-radius: 30px 30px 30px 30px;
   opacity: 0px;
-
-  
 }
 .hero-col1 {
   width: 50%;
-  float:left;
+  float: left;
   display: flex;
   flex-direction: column;
 }
@@ -97,7 +95,7 @@ a {
 }
 
 .hero-row2 {
-  width:418px;
+  width: 418px;
   height: 54px;
 
   padding-top: 100px;
@@ -109,17 +107,16 @@ a {
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.02em;
-  
+
   color: var(--white);
 
   /* Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical skills, translate your unique ideas. */
 
-position: absolute;
-width: 418px;
-height: 54px;
-left: 50px;
-top: 304px;
-
+  position: absolute;
+  width: 418px;
+  height: 54px;
+  left: 50px;
+  top: 304px;
 }
 .hero-row3 {
   display: flex;
@@ -127,12 +124,10 @@ top: 304px;
 
   padding-top: 136px;
   padding-left: 50px;
-
 }
 .hero-row3-col1 {
   display: inline-block;
   width: 25%;
-
 }
 .hero-row3-col2 {
   display: inline-block;
@@ -149,7 +144,7 @@ top: 304px;
   color: var(--white);
 }
 .happy-students-arrow {
-  width:18px;
+  width: 18px;
   height: 100%;
 }
 .hero-row3-col3 {
@@ -157,7 +152,6 @@ top: 304px;
   width: 30%;
 }
 .hero-row3-col4 {
-  
   display: inline-block;
   width: 15%;
 
@@ -172,8 +166,6 @@ top: 304px;
   text-align: left;
 
   color: #ffffff80;
-
-  
 }
 .hero-row3-col4 h4 {
   font-family: DM Sans;
@@ -184,7 +176,6 @@ top: 304px;
   text-align: left;
 
   color: var(--white);
-  
 }
 
 .hero-review1500-row1 {
@@ -197,15 +188,12 @@ top: 304px;
   width: 1440px;
   height: 100%;
   background-color: var(--black);
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .banner h2 {
-  
-
   text-transform: uppercase;
   font-family: DM Sans;
   font-size: 59px;
@@ -214,7 +202,6 @@ top: 304px;
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--brown);
-  
 }
 .banner .your-photography {
   color: var(--white);
