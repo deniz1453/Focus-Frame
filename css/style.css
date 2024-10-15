@@ -129,8 +129,8 @@ body{
   color: rgba(255, 255, 255, 1);
 }
 .abraham-border, .amanda-border {
-    width: 530px;
-    height: 216px;
+width: 610px;
+  height: 196px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
