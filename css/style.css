@@ -62,7 +62,7 @@ a {
 .our-courses-top-container {
   display:flex;
   justify-content:space-between;
-  width:80%;
+  width:85%;
   margin:auto;
   margin-bottom:40px;
 }
@@ -72,6 +72,7 @@ a {
   font-family: var(--dmsans);
   font-size:48px;
   font-weight: 500;
+  flex:11;
 }
 
 .our-courses-title-span {
@@ -80,11 +81,12 @@ a {
 
 .our-courses-text {
   width:35%;
-  color:var(--white)
+  color:var(--white);
+  flex:9;
 }
 
 .our-courses-cards-container {
-  width:80%;
+  width:85%;
   margin:auto;
 }
 
@@ -133,6 +135,11 @@ a {
 
 .our-courses-links {
   display:inline-flex;
+  fill:var(--gray);
+}
+
+.icon-upright-arrow:hover {
+  fill:var(--brown);
 }
 
 .our-courses-card-title {
@@ -149,5 +156,5 @@ a {
   font-family:var(--dmsans);
   font-size:16px;
   font-weight: 400;
-  flex:2;
+  flex:1;
 }
