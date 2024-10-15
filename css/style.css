@@ -52,10 +52,13 @@ a {
   color: inherit;
 }
 .aboutus{
+  width: 1240px;
+  max-width: 1440px;
   background-color: var(--black) ;
   
 }
 .au-title{
+  width: 1240px;
   display: block;
   color: var(--white);
   font-family: var(--dmsans);
@@ -69,7 +72,7 @@ a {
   color: var(--brown);
 }
 .au-wrap{
-  max-width: 1440px;
+  width: 1240px;
   height: 240px;
   display: flex;
   gap: 40px;
@@ -84,15 +87,20 @@ a {
   
   
 }
-.au-text{
+.au-wrap p{
   color: var(--white);
-  width: 330px;
   font-family: var(--dmsans);
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: -2%;
+  letter-spacing: -0.4px;
   padding-top: 10px;
   padding-bottom: 10px;
 
+}
+.au-text-first{
+  width: 314px;
+}
+.au-text-seccond{
+  width:276px;
 }
