@@ -52,8 +52,9 @@ a {
   color: inherit;
 }
 .aboutus{
-  width: 1240px;
-  max-width: 1440px;
+  width: 1440px;
+  padding:0 100px;
+  margin:0 auto;  
   background-color: var(--black) ;
   
 }
