@@ -55,6 +55,182 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.hero {
+  background-color: var(--gray);
+
+  width: 1240px;
+  height: 600px;
+
+  gap: 0px;
+
+  border-radius: 30px 30px 30px 30px;
+  opacity: 0px;
+
+  display: flex;
+  flex-direction: row;
+  float:left;
+
+  margin: 80px 100px;
+}
+.hero-col1 {
+  width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  float:left;
+}
+.hero-row1 {
+  width: 563px;
+  height: 204px;
+}
+.hero-row1 h1 {
+  font-family: DM Sans;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: var(--white);
+  margin: 80px 0 20px 50px;
+}
+.photography-text {
+  font-family: DM Sans;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 68px;
+  letter-spacing: -0.04em;
+  text-align: left;
+
+  color: var(--brown);
+}
+
+.hero-row2 {
+  width: 418px;
+  height: 54px;
+
+  position: relative;
+  top:-200px;
+}
+.hero-row2 h6 {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+
+  color: var(--white);
+
+  /* Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical skills, translate your unique ideas. */
+
+  position: absolute;
+  width: 418px;
+  height: 54px;
+  left: 50px;
+  top: 304px;
+}
+.hero-row3 {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 236px;
+  margin-left: 50px;
+}
+.hero-row3-col1 {
+  display: inline-block;
+  width: 25%;
+}
+.hero-row3-col2 {
+  display: inline-block;
+  width: 20%;
+}
+.hero-row3-col2 h5 {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  text-align: left;
+
+  color: var(--white);
+}
+.happy-students-arrow {
+  width: 18px;
+  height: 100%;
+}
+.hero-row3-col3 {
+  display: block;
+  width: 30%;
+}
+.hero-row3-col4 {
+  display: inline-block;
+  width: 25%;
+
+  margin: 0 0 10px -120px;
+}
+.hero-row3-col4 h5 {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  text-align: left;
+
+  color: #ffffff80;
+  margin-left: 30px;
+}
+.hero-row3-col4 h4 {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  text-align: left;
+
+  color: var(--white);
+  margin-left: 30px;
+}
+
+.hero-review1500-row1 {
+  display: block;
+}
+.hero-review1500-row2 {
+  display: block;
+}
+.hero-col2 {
+  
+  float: right;
+  margin-top: 80px;
+  margin-left:150px;
+  
+  
+}
+.photographer {
+  float: right;
+}
+
+.banner {
+  width: 1440px;
+  height: 100%;
+  background-color: var(--black);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner h2 {
+  text-transform: uppercase;
+  font-family: DM Sans;
+  font-size: 59px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--brown);
+}
+.banner .your-photography {
+  color: var(--white);
+} 
 
 body{
   background-color: var(--black);
