@@ -6,7 +6,6 @@
   --dmsans: "DM Sans", sans-serif;
   --linear-gradiant: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
 }
-body{background-color: var(--black);}
 /* Reset css */
 html {
   box-sizing: border-box;
@@ -93,6 +92,7 @@ a {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -2%;
+  color: var(--white);
 }
 .input-name{
   width: 100%;
@@ -141,6 +141,10 @@ form button{
   padding-bottom: 16px;
   padding-left: 216px;
   background-color: white;
+}
+form button:hover{
+  background-color: var(--black);
+  color: var(--brown);
 }
 .form-content .privacy-text{
   width: 480px;
@@ -318,6 +322,7 @@ form button{
  body{
   position: relative;
  }
+ .sing-up{background-color: var(--black);}
   .form-content{
     width: 480px;
     height: 577px;
@@ -325,12 +330,14 @@ form button{
     top: 4103px;
     left: 32px;
     color: var(--white);
+    background-color: var(--black);
   }
   .form-sign-up{
     width: 480px;
     height: 423px;
     position: relative;
     top:154px;
+    background-color: var(--black);
   }
   .form-content h2{
     width: 159px;
@@ -413,7 +420,6 @@ form button{
 /*mobile*/
 
 @media screen and (max-width: 375px){
- 
    .form-content{
      width: 335px;
      height: 523px;
@@ -421,6 +427,7 @@ form button{
      position: relative;
      left: 20px;
      color: var(--white);
+     background-color: var(--black);
    }
    .form-content h2{
      width: 98px;
@@ -498,3 +505,4 @@ form button{
      visibility: hidden;
    }
   }
+
