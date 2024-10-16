@@ -571,3 +571,458 @@ ul li a:hover{
   max-width: 150px;
   white-space: nowrap;
 }
+/*Sign Up min-width:1281*/
+.sing-up {
+  width: 1240px;
+  height: 578px;
+  position: relative;
+  background-color: var(--black);
+  font-family: var(--dmsans);
+  top: 2882px;
+  left: 100px;
+  gap: 200px;
+}
+
+.form-content{
+  width: 480px;
+  height: 578px;
+  position: absolute;
+  
+
+}
+.form-content h2{
+  width: 159px;
+  height: 54px;
+  font-family: var(--dmsans);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: -4%;
+  color: var(--white);
+}
+.form-content span{
+  color: var(--brown);
+}
+.form-content p{
+  width: 480px;
+  height: 40px;
+  position: absolute;
+  top:74px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -2%;
+  color: var(--white);
+}
+.input-name{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 154px;
+  color: var(--white);
+  padding-left: 18px;
+  border-radius: 12px;
+  border: 1px solid #FFFFFF33;
+  background-color: var(--black);
+  
+}
+.input-email{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 228px;
+  color:var(--white);
+  border-radius: 12px;
+  border: 1px solid #FFFFFF33;
+  background-color: var(--black);
+  padding-left: 18px;
+}
+form textarea{
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 302px;
+  border-radius: 12px;
+  border: 1px solid #FFFFFF33;
+  background-color: var(--black);
+  padding-left: 18px;
+  padding-top: 18px;
+  color: var(--white);
+}
+form button{
+  width: 479px;
+  height: 60px;
+  position: absolute;
+  top: 462px;
+  left: 0px;
+  border-radius: 12px;
+  padding-top: 16px;
+  padding-right: 216px;
+  padding-bottom: 16px;
+  padding-left: 216px;
+  background-color: white;
+}
+form button:hover{
+  background-color: var(--black);
+  color: var(--brown);
+}
+.form-content .privacy-text{
+  width: 480px;
+  height: 36px;
+  position: absolute;
+  top: 542px;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF80;
+}
+.image-section{
+  width:560px ;
+  height: 540px;
+  position: absolute;
+  right: 0px;
+}
+.lens-img{
+   width: 163px;
+  height: 154px;
+  position: absolute;
+  top: 60%;
+}
+.lens-bg-img{
+  background-color: var(--brown);
+  width: 190px;
+  height: 288px;
+  position: absolute;
+  top: 252px;
+  border-radius: 1000px;
+  
+}
+.camera-bg-img{
+  background-color:var(--gray) ;
+  width: 350px;
+  height: 540px;
+  position: absolute;
+  border-radius: 1000px;
+  left: 210px;
+}
+.camera-img{
+  width: 254px;
+  height: 313px;
+  position: absolute;
+  top: 139px;
+  left: 258px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .sing-up {
+    width: 1080px;
+    height: 578px;
+    background-color: var(--black);
+    font-family: var(--dmsans);
+    top: 2922px;
+    left: 100px;
+    gap: 60px;
+  }
+  
+  .form-content{
+    width: 480px;
+    height: 578px;
+    color: var(--white);
+    
+    
+  
+  }
+  .form-content h2{
+    width: 159px;
+    height: 54px;
+    font-family: var(--dmsans);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -4%;
+    color: var(--white);
+  }
+  .form-content span{
+    color: var(--brown);
+  }
+  .form-content p{
+    width: 480px;
+    height: 40px;
+    top:74px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -2%;
+  }
+  .input-name{
+    width: 480px;
+    height: 60px;
+    top: 154px;
+    padding-left: 18px;
+    border-radius: 12px;
+    border: 1px solid #FFFFFF33;
+    background-color: var(--black);
+    
+  }
+  .input-email{
+    width: 480px;
+    height: 60px;
+    top: 228px;
+    border-radius: 12px;
+    border: 1px solid #FFFFFF33;
+    background-color: var(--black);
+    padding-left: 18px;
+  }
+  form textarea{
+    width: 480px;
+    height: 120px;
+    top: 302px;
+    border-radius: 12px;
+    border: 1px solid #FFFFFF33;
+    background-color: var(--black);
+    padding-left: 18px;
+    padding-top: 18px;
+  }
+  form button{
+    width: 479px;
+    height: 60px;
+    top: 462px;
+    left: 0px;
+    border-radius: 12px;
+    padding-top: 16px;
+    padding-right: 216px;
+    padding-bottom: 16px;
+    padding-left: 216px;
+    background-color: white;
+  }
+  .form-content .privacy-text{
+    width: 480px;
+    height: 36px;
+    top: 542px;
+    gap: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF80;
+  }
+  .image-section{
+    width:540px ;
+    height: 540px;
+  }
+  .lens-img{
+     width: 150px;
+    height: 142px;
+    top: 60%;
+  }
+  .lens-bg-img{
+    background-color: var(--brown);
+    width: 180px;
+    height: 288px;
+    top: 252px;
+    border-radius: 1000px;
+    
+  }
+  .camera-bg-img{
+    background-color:var(--gray) ;
+    width: 340px;
+    height: 540px;
+    left: 200px;
+  }
+  .camera-img{ 
+    width: 240px;
+    height: 296px;
+    top: 156px;
+    left: 250px;
+  }
+  
+}
+/*Tablet*/
+@media screen and (min-width: 376px) and (max-width: 768px){
+ body{
+  position: relative;
+ }
+ .sing-up{background-color: var(--black);}
+  .form-content{
+    width: 480px;
+    height: 577px;
+    position: absolute;
+    top: 4103px;
+    left: 32px;
+    color: var(--white);
+    background-color: var(--black);
+  }
+  .form-sign-up{
+    width: 480px;
+    height: 423px;
+    position: relative;
+    top:154px;
+    background-color: var(--black);
+  }
+  .form-content h2{
+    width: 159px;
+    height: 54px;
+    font-family: var(--dmsans);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -4%;
+    color: var(--white);
+  }
+  .form-content span{
+    color: var(--brown);
+  }
+  .form-content p{
+    width: 480px;
+    height: 40px;
+    top:74px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -2%;
+  }
+  .input-name{
+    width: 480px;
+    height: 60px;
+    padding-left: 18px;
+    top: 0px;
+    border-radius: 12px;
+    border: 1px solid #FFFFFF33;
+    background-color: var(--black);
+    
+  }
+  .input-email{
+    width: 480px;
+    height: 60px;
+    top: 74px;
+    border-radius: 12px;
+    border: 1px solid #FFFFFF33;
+    background-color: var(--black);
+    padding-left: 18px;
+  }
+  form textarea{
+    width: 480px;
+    height: 119px;
+    top: 148px;
+    border-radius: 12px;
+    border: 1px solid #FFFFFF33;
+    background-color: var(--black);
+    padding-left: 18px;
+    padding-top: 18px;
+  }
+  form button{
+    width: 479px;
+    height: 60px;
+    top: 307px;
+    border-radius: 12px;
+    padding-top: 16px;
+    padding-right: 216px;
+    padding-bottom: 16px;
+    padding-left: 216px;
+    background-color: white;
+  }
+  .form-content .privacy-text{
+    width: 480px;
+    height: 36px;
+    top: 387.71px;
+    gap: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF80;
+  }
+  .image-section{
+    visibility: hidden;
+  }
+  
+  
+}
+/*mobile*/
+
+@media screen and (max-width: 375px){
+   .form-content{
+     width: 335px;
+     height: 523px;
+     top: 4519px;
+     position: relative;
+     left: 20px;
+     color: var(--white);
+     background-color: var(--black);
+   }
+   .form-content h2{
+     width: 98px;
+     height: 32px;
+     font-family: var(--dmsans);
+     font-weight: 500;
+     font-size: 28px;
+     line-height: 32px;
+     letter-spacing: -4%;
+     color: var(--white);
+     top: 52px;
+   }
+   .form-content span{
+     color: var(--brown);
+   }
+   .form-content p{
+     width: 295px;
+     height: 54px;
+     top:52px;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 20px;
+     letter-spacing: -2%;
+   }
+   .input-name{
+     width: 335px;
+     height: 46px;
+     padding-left: 14px;
+     top: 147px;
+     border-radius: 12px;
+     border: 1px solid #FFFFFF33;
+     background-color: var(--black);
+     
+   }
+   .input-email{
+     width: 335px;
+     height: 46px;
+     top: 201px;
+     border-radius: 12px;
+     border: 1px solid #FFFFFF33;
+     background-color: var(--black);
+     padding-left: 14px;
+   }
+   form textarea{
+     width: 335px;
+     height: 112px;
+     top: 255px;
+     border-radius: 12px;
+     border: 1px solid #FFFFFF33;
+     background-color: var(--black);
+     padding-left: 14px;
+     padding-top: 14px;
+   }
+   form button{
+     width: 335px;
+     height: 48px;
+     top: 407px;
+     border-radius: 12px;
+     padding-top: 14px;
+     padding-right: 127px;
+     padding-bottom: 14px;
+     padding-left: 127px;
+     background-color: white;
+   }
+   .form-content .privacy-text{
+     width: 335px;
+     height: 48px;
+     top: 475px;
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 16px;
+     color: #FFFFFF80;
+   }
+   .image-section{
+     visibility: hidden;
+   }
+  }
+
