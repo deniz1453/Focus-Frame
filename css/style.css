@@ -71,8 +71,9 @@ a {
   font-size: 48px;
   font-weight: 500;
   color: var(--white);
-  line-height: 64px;
+  line-height: 54px;
   letter-spacing: -4%;
+  margin-bottom: 10px;
 }
 .our-mentor-span {
   color: var(--brown);
@@ -80,7 +81,7 @@ a {
 .our-mentor-ul {
   display: flex;
   justify-content: space-between;
-  padding: 40px 103px;
+  padding: 30px 103px 20px 103px;
   list-style: none;
   gap: 100px;
   align-items: center;
@@ -93,7 +94,7 @@ a {
   align-items: center;
   box-sizing: border-box;
   width: 180px;
-  height: 258px;
+  height: 250px;
   justify-content: center;
   text-align: center;
   object-fit: cover;
