@@ -83,6 +83,12 @@ a {
   width:35%;
   color:var(--white);
   flex:9;
+  font-family: var(--dmsans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: left;
 }
 
 .our-courses-cards-container {
