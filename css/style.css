@@ -88,7 +88,9 @@ a {
   
   
 }
-.au-wrap p{
+
+.au-text-first{
+  width: 314px;
   color: var(--white);
   font-family: var(--dmsans);
   font-weight: 400;
@@ -97,11 +99,16 @@ a {
   letter-spacing: -0.4px;
   padding-top: 10px;
   padding-bottom: 10px;
-
-}
-.au-text-first{
-  width: 314px;
 }
 .au-text-seccond{
   width:276px;
+  color: var(--white);
+  font-family: var(--dmsans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+ 
 }
