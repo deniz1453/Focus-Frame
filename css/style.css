@@ -7,7 +7,8 @@
   --dmsans: "DM Sans", sans-serif;
   --linear-gradiant: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
   --t: 1px; /* thickness of the lines */
-  --g: 287px; /* gap between lines */
+  --g: 287px; /* gap between vertical lines */
+  --w: 185px; /* gap between horizontal lines*/
   --s: 12px; /* size of the dashes*/
 }
 /* Reset css */
@@ -236,7 +237,9 @@ body {
 
   position: relative;
   background: conic-gradient(at var(--t), #0000 75%, rgba(255, 255, 255, 0.1) 0)
-    var(--g) / calc(var(--g) + var(--t)) var(--s);
+      var(--g) / calc(var(--g) + var(--t)) var(--s),
+    conic-gradient(at 50% var(--t), #0000 75%, rgba(255, 255, 255, 0.1) 0) 0 0 /
+      var(--s) var(--w);
   background-color: var(--black);
 }
 header {
