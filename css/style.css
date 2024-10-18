@@ -242,20 +242,28 @@ body {
       var(--s) var(--w);
   background-color: var(--black);
 }
+
+/*HEADER*/
+
+
 header {
   background-color: var(--black);
   color: var(--white);
   /* height: 100px; */
   display: flex;
-  flex-direction: column;
+  text-align: center;
+
 }
 
 .header {
   margin: 20px 100px;
   display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .div-nav {
+  height: 60px;
   padding: 16px 50px 16px 50px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -264,31 +272,26 @@ header {
 .menu-nav {
   margin: auto;
   display: flex;
-  position: relative;
-  z-index: 1; /* İçeriğin üstte kalması için */
-  color: white; /* Yazı rengini beyaz yap */
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  width: 100%;
 }
 
-.nav-logo-title {
-  width: 123px;
-  height: 16px;
-  margin-right: 209px;
-  line-height: 1.1;
-  letter-spacing: 0.01em;
-  font-weight: 700;
-  font-size: 20px;
-  text-decoration: none;
-  font-family: var(--dmsans);
+.header-logo-icon{
+  fill: var(--white);
+  margin-right: 97px;
 }
-
-ul {
+.nav-logo-title{
+  padding: 2px 0;
+}
+.nav-menu-list {
   display: inline-flex;
   gap: 40px;
   list-style: none;
 }
 
-ul li {
+.nav-menu-list li {
   font-family: var(--dmsans);
   font-size: 14px;
   font-weight: 400;
@@ -296,7 +299,7 @@ ul li {
   text-transform: uppercase;
 }
 
-ul li a:hover {
+.nav-menu-list li a:hover {
   color: #bea69e;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -324,6 +327,234 @@ ul li a:hover {
   line-height: 28px;
   font-weight: 700;
 }
+
+.header-menu-btn {
+  background-color: var(--black);
+  border: none;
+  display: none;
+}
+.mobile-sign-up{
+  display: none;
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    header {
+      background-color: var(--black);
+      color: var(--white);
+      /* height: 100px; */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      margin: 20px 32px 0 32px;
+      display: flex;
+    }
+
+    .div-nav {
+      width: 504px;
+      display: inline-flex;
+      padding: 16px 20px 16px 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+     .header-menu-btn {
+      display: block;
+      margin-left: auto;
+      background-color: var(--black);
+      border: none;
+      cursor: pointer;
+
+    }
+    .mobil-sign-up{
+      display: none;
+    }
+    .menu-nav {
+      display: flex;
+      position: relative;
+      z-index: 1;
+      /* İçeriğin üstte kalması için */
+      color: white;
+      /* Yazı rengini beyaz yap */
+      text-align: center;
+    }
+
+    .header-logo-icon{
+      margin-right: 301px;
+    }
+    .nav-menu-list {
+      display: none;
+      position:absolute;
+      top: 100%;
+      right: 2%;
+      width: 270px;
+      height: 29vh;
+      background-color: var(--brown);
+      flex-direction: column;
+      justify-self: flex-start;
+      border-radius: 10px;
+      transition: all .50sn ease;
+    }
+
+    .nav-menu-list li {
+      font-family: var(--dmsans);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18.23px;
+      text-transform: uppercase;
+    }
+
+    .nav-menu-list li a:hover {
+      color: #bea69e;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .sign-up {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      /* margin: auto; */
+      background-color: var(--white);
+      color: var(--black);
+      border-radius: 12px;
+    }
+
+    .sign-up:hover {
+      background-color: #1d1d1d;
+      color: #bea69e;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .sign-up a {
+      padding: 16px 58px 16px 58px;
+      font-family: var(--dmsans);
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+
+   
+}
+
+@media (max-width: 376px){
+         header {
+          background-color: var(--black);
+          color: var(--white);
+          /* height: 100px; */
+          display: flex;
+          flex-direction: column;
+        }
+      
+        .header {
+          margin: 20px 32px 0 32px;
+          display: flex;
+        }
+
+        .nav-logo-title{
+          height: auto;
+        }
+
+        .menu-nav{
+          width: 335px;
+        }
+        .div-nav {
+          display:flex;
+          padding: 16px 20px 16px 16px;
+          border-radius: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+      
+        .header-menu-btn {
+          display: block;
+          margin-left: auto;
+          background-color: var(--black);
+          border: none;
+          cursor: pointer;
+      
+        }
+      
+        .mobile-sign-up {
+          align-items: center;
+          justify-self: center;
+          width: 32px;
+          height: 32px;
+          padding: 8px;
+          display: flex;
+          background-color: #1d1d1d;
+          border-radius: 50px;
+        }
+        .mobile-sign-up-svg{
+          fill: rgba(190, 166, 158, 0.4);
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mobile-sign-up:hover .mobile-sign-up-svg{
+          fill: var(--brown);
+        }
+      
+        .menu-nav {
+          display: flex;
+          position: relative;
+          z-index: 1;
+          /* İçeriğin üstte kalması için */
+          color: white;
+          /* Yazı rengini beyaz yap */
+          text-align: center;
+        }
+
+      
+        .nav-menu-list {
+          display: none;
+          position: absolute;
+          top: 100%;
+          right: 2%;
+        }
+      
+        .nav-menu-list li {
+          font-family: var(--dmsans);
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18.23px;
+          text-transform: uppercase;
+        }
+      
+        .nav-menu-list li a:hover {
+          color: #bea69e;
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      
+        .sign-up {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          /* margin: auto; */
+          background-color: var(--white);
+          color: var(--black);
+          border-radius: 12px;
+        }
+      
+        .sign-up:hover {
+          background-color: #1d1d1d;
+          color: #bea69e;
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      
+        .sign-up a {
+          padding: 16px 58px 16px 58px;
+          font-family: var(--dmsans);
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 700;
+        }
+
+        .mobile-sign-up:hover{
+          color: #1d1d1d;
+        }
+}
+
+/* ABOUT US*/
+
 .aboutus {
   width: 1440px;
   padding: 0 100px;
