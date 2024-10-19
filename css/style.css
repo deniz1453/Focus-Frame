@@ -866,7 +866,7 @@ form textarea {
   padding-top: 18px;
   color: var(--white);
 }
-form button {
+.form-sign-up button {
   width: 479px;
   height: 60px;
   position: absolute;
