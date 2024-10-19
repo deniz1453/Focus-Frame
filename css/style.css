@@ -1334,7 +1334,8 @@ body {
   margin-bottom: 20px;
 }
 footer {
-  background-color: var(--black);
+  /* background-color: var(--black); */
+  background-color: red;
   color: var(--white);
   padding: 40px 20px;
   text-align: left;
