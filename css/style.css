@@ -60,7 +60,7 @@ a {
 }
 .hero {
   background-color: var(--gray);
-
+  
   width: 1240px;
   height: 600px;
 
@@ -234,12 +234,13 @@ a {
 
 body {
   background-color: var(--black);
-
-  position: relative;
-  background: conic-gradient(at var(--t), #0000 75%, rgba(255, 255, 255, 0.1) 0)
+  background-image: url("/images/dashed-bg-desktop.png");
+ 
+  /* z-index: -1; */
+  /* background: conic-gradient(at var(--t), #0000 75%, rgba(255, 255, 255, 0.1) 0)
       var(--g) / calc(var(--g) + var(--t)) var(--s),
     conic-gradient(at 50% var(--t), #0000 75%, rgba(255, 255, 255, 0.1) 0) 0 0 /
-      var(--s) var(--w);
+      var(--s) var(--w); */
   background-color: var(--black);
 }
 
@@ -308,12 +309,16 @@ header {
   display: flex;
   /* margin: auto; */
   margin-left: 20px;
-
+  
   background-color: var(--white);
   color: var(--black);
   border-radius: 12px;
+  
 }
-
+#sign-up{
+  width: 1240px;
+  
+}
 .sign-up:hover {
   background-color: #1d1d1d;
   color: #bea69e;
@@ -801,6 +806,7 @@ header {
   font-family: var(--dmsans);
   left: 100px;
   gap: 200px;
+  
 }
 
 .form-content {
@@ -1237,10 +1243,11 @@ body {
 .reviews {
   display: flex;
   justify-content: space-between;
-  width: 1080px;
+  width: 1240px;
   height: 320px;
   margin-left: 100px;
   margin-top: 50px;
+  background-color: var(--black);
 }
 .reviews-title {
   width: 171px;
@@ -1334,7 +1341,7 @@ body {
   margin-bottom: 20px;
 }
 footer {
-  background-color: var(--black);
+  /* background-color: var(--black); */
   
   color: var(--white);
   padding: 40px 20px;
