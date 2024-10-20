@@ -143,6 +143,12 @@ a {
   display: inline-block;
   width: 25%;
 }
+.happyStudents {
+  display: block;
+}
+.happyStudents_Mobile {
+  display: none;
+}
 .hero-row3-col2 {
   display: inline-block;
   width: 20%;
@@ -435,6 +441,12 @@ header {
       width: 137px;
       height: 100%;
     }
+    .happyStudents {
+      display: block;
+    }
+    .happyStudents_Mobile {
+      display: none;
+    }
     .hero-row3-col2{
       width: 82px;
       height: 100%;
@@ -523,7 +535,51 @@ header {
           cursor: pointer;
       
         }
-      
+        .hero {
+          display: flex;
+        }
+        .hero {
+          width: 100%;
+          height: 777px;
+          flex: 1 auto;
+          flex-wrap: wrap;
+        }
+        .hero-row3{
+          margin-top: 140px;
+        }
+        .hero-row3-col1{
+          width: 109px;
+          height: 100%;
+        }
+        .happyStudents {
+          display: none;
+        }
+        .happyStudents_Mobile {
+          display: block;
+        }
+        .hero-row3-col2{
+          width: 82px;
+          height: 100%;
+        }
+        .hero-row3-col4 {
+          margin-left: -60px;
+        }
+        .hero-col2 .photographer{
+          display: none;
+        }
+        .hero-col2 {
+          min-width: 704px;
+          height:auto;
+          justify-content:center ;
+        }
+        .hero-col2 .photographer_Mobile {
+          display: inline;
+          margin-top: -210px;
+          flex: auto;
+        }
+        .hero-col2 .photographer_Tablet {
+          display: none;
+        }
         .mobile-sign-up {
           align-items: center;
           justify-self: center;
