@@ -1446,9 +1446,122 @@ footer {
     width: calc(((100% - 20px) / 2));
   }
   /* Our Courses Bitişi */
+  /* About Us Başlangıç */
+  .aboutus {
+    width: 768px;
+    padding: 0 32px;
+  }
+  .au-title {
+    width: 704px;
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 50px;
+  }
+  .image-mobile {
+    display: none;
+  }
+  .image-tablet {
+    display: block;
+    width: 704px;
+  }
+  .au-wrap {
+    width: 704px;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .au-image {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .au-text-first {
+    display: flex;
+    width: 280px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    margin: 0;
+  }
+  .au-text-seccond {
+    width: 280px;
+    height: 215px;
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+  }
+  /* About Us Bitişi */
 }
 /* Media bölümü 768-1279 Tabletten > Desktop'a Bölüm Bitişi */
 /* Media Bölümü 1439-1280 1440<1280 Aralığında değişken medialar Bölümü*/
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
+  /* About Us Başlangıç */
+  .aboutus {
+    width: 1280px;
+    padding: 0 100px;
+  }
+  .au-title {
+    width: 1080px;
+  }
+  .image-tablet {
+    display: none;
+  }
+  .au-image {
+    margin-bottom: 0;
+  }
+  .image-pc {
+    display: block;
+  }
+  .au-wrap {
+    width: 1080px;
+    gap: 20px;
+  }
+  .au-text-first {
+    width: 268px;
+    height: 260px;
+    margin-left: 20px;
+    letter-spacing: -0.4px;
+  }
+  .au-text-seccond {
+    width: 264px;
+    letter-spacing: -0.4px;
+  }
+  /* About Us Bitimi */
+}
+@media (min-width: 1440px) {
+  .aboutus {
+    width: 1440px;
+  }
+  .au-title {
+    width: 1240px;
+  }
+  .image-pc {
+    display: none;
+  }
+  .image-bigscreen {
+    display: block;
+  }
+  .au-image {
+    height: 240px;
+  }
+  .au-wrap {
+    width: 1240px;
+    height: 240px;
+    gap: 40px;
+  }
+  .au-text-first {
+    width: 314px;
+    height: 240px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+  }
+  .au-text-seccond {
+    width: 276px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
 }
 /* Media Bölümü 1439-1280 1440<1280 Aralığında değişken medialar Bölümü bitişi  */
