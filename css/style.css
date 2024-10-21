@@ -137,6 +137,8 @@ header {
 .bg-img {
   background-image: url("/images/dashed-bg-desktop.png");
   background-repeat: repeat;
+  margin:auto;
+  max-width:1440px;
 }
 .hero {
   background-color: var(--gray);
@@ -359,37 +361,43 @@ header {
 }
 /* About Us Bitiş */
 /* Our courses Başlangıç */
+.our-courses-main-container {
+  width:100%;
+  background-color:var(--gray);
+}
+
 .our-courses-section {
-  width: 100%;
-  background-color: var(--gray);
-  padding-bottom: 100px;
-  padding-top: 100px;
+  max-width:1440px;
+  background-color:var(--gray);
+  padding-bottom:100px;
+  padding-top:100px;
+  margin:auto;
 }
 
 .our-courses-top-container {
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-  margin: auto;
-  margin-bottom: 40px;
+  display:flex;
+  justify-content:space-between;
+  width:86.53%;
+  margin:auto;
+  margin-bottom:40px;
 }
 
 .our-courses-title {
-  color: var(--white);
+  color:var(--white);
   font-family: var(--dmsans);
-  font-size: 48px;
+  font-size:48px;
   font-weight: 500;
-  flex: 11;
+  flex:11;
 }
 
 .our-courses-title-span {
-  color: var(--brown);
+  color:var(--brown)
 }
 
 .our-courses-text {
-  width: 35%;
-  color: var(--white);
-  flex: 9;
+  width:35%;
+  color:var(--white);
+  flex:9;
   font-family: var(--dmsans);
   font-size: 16px;
   font-weight: 400;
@@ -399,78 +407,79 @@ header {
 }
 
 .our-courses-cards-container {
-  width: 85%;
-  margin: auto;
+  width:86.53%;
+  margin:auto;
 }
 
 .our-courses-cards-ol {
   list-style-type: none;
-  display: flex;
-  gap: 20px;
-  width: 100%;
+  display:flex;
+  gap:20px;
+  width:100%;
+  margin:auto;
 }
 
 .our-courses-cards-li {
-  width: calc((100% - 40px) / 3);
+  width:calc(((100% - 40px) / 3));
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .our-courses-card {
-  width: 400px;
+  width:100%;
   background-image: var(--linear-gradiant);
-  display: flex;
+  display:flex;
   flex-direction: column;
-  height: 450px;
-  padding: 20px;
+  height:450px;
+  padding:20px;
 }
 
 .our-courses-cards-top-block {
-  display: flex;
+  display:flex;
   flex-direction: row;
   justify-content: space-between;
-  flex: 1;
-  margin-top: 15px;
+  flex:1;
+  margin-top:15px;
 }
 
 .our-courses-course-number {
-  color: var(--white);
+  color:var(--white);
   opacity: 50%;
   font-weight: 400;
-  font-size: 14px;
+  font-size:14px;
   font-family: var(--dmsans);
 }
 
 .icon-upright-arrow {
-  width: 32px;
+  width:32px;
   height: 32px;
 }
 
 .our-courses-links {
-  display: inline-flex;
-  fill: var(--gray);
+  display:inline-flex;
+  fill:var(--gray);
 }
 
 .icon-upright-arrow:hover {
-  fill: var(--brown);
+  fill:var(--brown);
 }
 
 .our-courses-card-title {
-  width: 256px;
-  color: var(--white);
+  width:256px;
+  color:var(--white);
   font-weight: 500;
-  font-size: 28px;
-  flex: 5;
+  font-size:28px;
+  flex:5;
 }
 
 .our-courses-cours-description {
-  color: var(--white);
-  opacity: 50%;
-  font-family: var(--dmsans);
-  font-size: 16px;
+  color:var(--white);
+  opacity:50%;
+  font-family:var(--dmsans);
+  font-size:16px;
   font-weight: 400;
-  flex: 1;
+  flex:1;
 }
 /* Our Courses Bitiş */
 /* Umut Can // Our mentors Başlangıç */
@@ -478,7 +487,8 @@ header {
   display: flex;
   flex-direction: column;
   background-color: var(--black);
-  min-width: 1440px;
+  max-width: 1440px;
+  margin:auto;
 }
 .our-mentor-section {
   /* min-width: 1240px; */
@@ -550,7 +560,7 @@ header {
   position: relative;
   background-color: var(--black);
   font-family: var(--dmsans);
-  left: 100px;
+  margin:auto;
   gap: 200px;
 }
 
@@ -687,8 +697,7 @@ form button:hover {
   justify-content: space-between;
   width: 1240px;
   height: 320px;
-  margin-left: 100px;
-  margin-top: 50px;
+  margin:auto;
   background-color: var(--black);
 }
 .reviews-title {
@@ -786,7 +795,7 @@ form button:hover {
 /* Footer Başlangıç */
 footer {
   /* background-color: var(--black); */
-
+  margin:auto;
   color: var(--white);
   padding: 40px 20px;
   text-align: left;
@@ -909,6 +918,7 @@ footer {
   justify-content: space-between;
   font-size: 14px;
   line-height: 18px;
+  margin:auto;
 }
 
 .footer-bottom a:hover {
@@ -1197,48 +1207,7 @@ footer {
   .image-section {
     visibility: hidden;
   }
-  /* Our Courses Bölümü */
-  .our-courses-top-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  .our-courses-title {
-    width: 100%;
-    margin: auto;
-    max-width: 335px;
-  }
-
-  .our-courses-text {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px;
-    max-width: 335px;
-  }
-
-  .our-courses-top-container {
-    width: 89.33%;
-  }
-  .our-courses-cards-container {
-    width: 89.33%;
-  }
-
-  .our-courses-cards-ol {
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .our-courses-cards-li {
-    width: 100%;
-    max-width: 337px;
-    margin: auto;
-  }
-  /* Our Courses Bitimi */
+ 
 }
 /* Media bölümü 375-767 Mobilden > Tablete Bölümün Bitişi */
 /* Media bölümü 768-1279 Tabletten > Desktop'a Bölüm Başlangıcı */
