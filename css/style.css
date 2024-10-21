@@ -1089,7 +1089,6 @@ footer {
     min-width: 335px;
     height: auto;
     justify-content: center;
-     
   }
   .hero-col2 .photographer_Tablet {
     display: none;
@@ -1105,8 +1104,7 @@ footer {
     overflow: hidden;
     text-overflow: clip;
   }
-  
-  
+
   body {
     position: relative;
   }
@@ -1199,6 +1197,48 @@ footer {
   .image-section {
     visibility: hidden;
   }
+  /* Our Courses Bölümü */
+  .our-courses-top-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .our-courses-title {
+    width: 100%;
+    margin: auto;
+    max-width: 335px;
+  }
+
+  .our-courses-text {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 335px;
+  }
+
+  .our-courses-top-container {
+    width: 89.33%;
+  }
+  .our-courses-cards-container {
+    width: 89.33%;
+  }
+
+  .our-courses-cards-ol {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .our-courses-cards-li {
+    width: 100%;
+    max-width: 337px;
+    margin: auto;
+  }
+  /* Our Courses Bitimi */
 }
 /* Media bölümü 375-767 Mobilden > Tablete Bölümün Bitişi */
 /* Media bölümü 768-1279 Tabletten > Desktop'a Bölüm Başlangıcı */
@@ -1247,7 +1287,7 @@ footer {
     min-width: 704px;
     height: auto;
     justify-content: center;
-    text-align:center;
+    text-align: center;
   }
   .hero-col2 .photographer_Tablet {
     display: block;
@@ -1386,6 +1426,26 @@ footer {
     top: 156px;
     left: 250px;
   }
+  /* Our Courses Başlangıcı */
+  .our-courses-title {
+    flex: 8;
+  }
+
+  .our-courses-cards-ol {
+    flex-wrap: wrap;
+  }
+  .our-courses-top-container {
+    max-width: 704px;
+  }
+
+  .our-courses-cards-container {
+    max-width: 704px;
+  }
+
+  .our-courses-cards-li {
+    width: calc(((100% - 20px) / 2));
+  }
+  /* Our Courses Bitişi */
 }
 /* Media bölümü 768-1279 Tabletten > Desktop'a Bölüm Bitişi */
 /* Media Bölümü 1439-1280 1440<1280 Aralığında değişken medialar Bölümü*/
