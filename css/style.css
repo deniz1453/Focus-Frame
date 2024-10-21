@@ -14,16 +14,13 @@
 /* Reset css */
 html {
   box-sizing: border-box;
-
   font-family: var(--dmsans);
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
 p,
 h1,
 h2,
@@ -33,42 +30,114 @@ h5,
 h6 {
   margin: 0;
 }
-
 ul,
 ol {
   margin: 0;
   padding: 0;
 }
-
 button {
   cursor: pointer;
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
 address {
   font-style: normal;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
+body {
+  background-color: var(--black);
+  background-image: url("/images/dashed-bg-desktop.png");
+} /*Header Başlangıç*/
+header {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  text-align: center;
+}
+.header {
+  margin: 20px 100px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.div-nav {
+  height: 60px;
+  padding: 16px 50px 16px 50px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.menu-nav {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  width: 100%;
+}
+.header-logo-icon {
+  fill: var(--white);
+  margin-right: 97px;
+}
+.nav-logo-title {
+  padding: 2px 0;
+}
+.nav-menu-list {
+  display: inline-flex;
+  gap: 40px;
+  list-style: none;
+}
+.nav-menu-list li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.23px;
+  text-transform: uppercase;
+}
+.nav-menu-list li a:hover {
+  color: #bea69e;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sign-up {
+  display: flex;
+  margin-left: 20px;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 12px;
+}
+#sign-up {
+  width: 1240px;
+}
+.sign-up:hover {
+  background-color: #1d1d1d;
+  color: #bea69e;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sign-up a {
+  padding: 16px 84px 16px 84px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.header-menu-btn {
+  background-color: var(--black);
+  border: none;
+  display: none;
+}
+.mobile-sign-up {
+  display: none;
+} /* Header Bitişi */
+/* Hero Başlangıç */
 .hero {
   background-color: var(--gray);
-  
   width: 1240px;
   height: 600px;
-
   gap: 0px;
-
   border-radius: 30px 30px 30px 30px;
-  opacity: 0px;
-
   display: flex;
   flex-direction: row;
   float: left;
@@ -77,7 +146,6 @@ a {
 }
 .hero-col1 {
   width: 50%;
-
   display: flex;
   flex-direction: column;
   float: left;
@@ -87,7 +155,6 @@ a {
   height: 204px;
 }
 .hero-row1 h1 {
-  font-family: DM Sans;
   font-size: 64px;
   font-weight: 500;
   line-height: 68px;
@@ -97,7 +164,6 @@ a {
   margin: 80px 0 20px 50px;
 }
 .photography-text {
-  font-family: DM Sans;
   font-size: 64px;
   font-style: italic;
   font-weight: 400;
@@ -107,25 +173,19 @@ a {
 
   color: var(--brown);
 }
-
 .hero-row2 {
   width: 418px;
   height: 54px;
-
   position: relative;
   top: -200px;
 }
 .hero-row2 h6 {
-  font-family: DM Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.02em;
-
   color: var(--white);
-
   /* Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical skills, translate your unique ideas. */
-
   position: absolute;
   width: 418px;
   height: 54px;
@@ -135,7 +195,6 @@ a {
 .hero-row3 {
   display: flex;
   flex-direction: row;
-
   margin-top: 236px;
   margin-left: 50px;
 }
@@ -154,13 +213,11 @@ a {
   width: 20%;
 }
 .hero-row3-col2 h5 {
-  font-family: DM Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.04em;
   text-align: left;
-
   color: var(--white);
 }
 .happy-students-arrow {
@@ -174,32 +231,26 @@ a {
 .hero-row3-col4 {
   display: inline-block;
   width: 25%;
-
   margin: 0 0 10px -120px;
 }
 .hero-row3-col4 h5 {
-  font-family: DM Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.04em;
   text-align: left;
-
   color: #ffffff80;
   margin-left: 30px;
 }
 .hero-row3-col4 h4 {
-  font-family: DM Sans;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.04em;
   text-align: left;
-
   color: var(--white);
   margin-left: 30px;
 }
-
 .hero-review1500-row1 {
   display: block;
 }
@@ -242,425 +293,8 @@ a {
 .banner .your-photography {
   color: var(--white);
 }
-
-body {
-  background-color: var(--black);
-  background-image: url("/images/dashed-bg-desktop.png");
- 
-  /* z-index: -1; */
-  /* background: conic-gradient(at var(--t), #0000 75%, rgba(255, 255, 255, 0.1) 0)
-      var(--g) / calc(var(--g) + var(--t)) var(--s),
-    conic-gradient(at 50% var(--t), #0000 75%, rgba(255, 255, 255, 0.1) 0) 0 0 /
-      var(--s) var(--w); */
-  background-color: var(--black);
-}
-
-/*HEADER*/
-
-
-header {
-  background-color: var(--black);
-  color: var(--white);
-  /* height: 100px; */
-  display: flex;
-  text-align: center;
-
-}
-
-.header {
-  margin: 20px 100px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-
-.div-nav {
-  height: 60px;
-  padding: 16px 50px 16px 50px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.menu-nav {
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--white);
-  width: 100%;
-}
-
-.header-logo-icon{
-  fill: var(--white);
-  margin-right: 97px;
-}
-.nav-logo-title{
-  padding: 2px 0;
-}
-.nav-menu-list {
-  display: inline-flex;
-  gap: 40px;
-  list-style: none;
-}
-
-.nav-menu-list li {
-  font-family: var(--dmsans);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18.23px;
-  text-transform: uppercase;
-}
-
-.nav-menu-list li a:hover {
-  color: #bea69e;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sign-up {
-  display: flex;
-  /* margin: auto; */
-  margin-left: 20px;
-  
-  background-color: var(--white);
-  color: var(--black);
-  border-radius: 12px;
-  
-}
-#sign-up{
-  width: 1240px;
-  
-}
-.sign-up:hover {
-  background-color: #1d1d1d;
-  color: #bea69e;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sign-up a {
-  padding: 16px 84px 16px 84px;
-  font-family: var(--dmsans);
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 700;
-}
-
-.header-menu-btn {
-  background-color: var(--black);
-  border: none;
-  display: none;
-}
-.mobile-sign-up{
-  display: none;
-}
-
-@media screen and (min-width: 376px) and (max-width: 768px){
-    header {
-      background-color: var(--black);
-      color: var(--white);
-      /* height: 100px; */
-      display: flex;
-      flex-direction: column;
-    }
-
-    .header {
-      margin: 20px 32px 0 32px;
-      display: flex;
-    }
-
-    .div-nav {
-      width: 504px;
-      display: inline-flex;
-      padding: 16px 20px 16px 20px;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-     .header-menu-btn {
-      display: block;
-      margin-left: auto;
-      background-color: var(--black);
-      border: none;
-      cursor: pointer;
-
-    }
-    .mobil-sign-up{
-      display: none;
-    }
-    .menu-nav {
-      display: flex;
-      position: relative;
-      z-index: 1;
-      /* İçeriğin üstte kalması için */
-      color: white;
-      /* Yazı rengini beyaz yap */
-      text-align: center;
-    }
-
-    .header-logo-icon{
-      margin-right: 301px;
-    }
-    .nav-menu-list {
-      display: none;
-      position:absolute;
-      top: 100%;
-      right: 2%;
-      width: 270px;
-      height: 29vh;
-      background-color: var(--brown);
-      flex-direction: column;
-      justify-self: flex-start;
-      border-radius: 10px;
-      transition: all .50sn ease;
-    }
-
-    .nav-menu-list li {
-      font-family: var(--dmsans);
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 18.23px;
-      text-transform: uppercase;
-    }
-
-    .nav-menu-list li a:hover {
-      color: #bea69e;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .hero {
-      display: flex;
-    }
-    .hero {
-      width: 100%;
-      height: 900px;
-      flex: 1 auto;
-      flex-wrap: wrap;
-    }
-    .hero-row3{
-      margin-top: 140px;
-    }
-    .hero-row3-col1{
-      width: 137px;
-      height: 100%;
-    }
-    .happyStudents {
-      display: block;
-    }
-    .happyStudents_Mobile {
-      display: none;
-    }
-    .hero-row3-col2{
-      width: 82px;
-      height: 100%;
-    }
-    .hero-row3-col4 {
-      margin-left: -60px;
-    }
-    .hero-col2 .photographer{
-      display: none;
-    }
-    .hero-col2 {
-      min-width: 704px;
-      height:auto;
-      justify-content:center ;
-    }
-    .hero-col2 .photographer_Tablet {
-      display: inline;
-      margin-top: -210px;
-      flex: auto;
-      
-      
-    }
-    .hero-col2 .photographer_Mobile {
-      display: none;
-    }
-    .sign-up {
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      /* margin: auto; */
-      background-color: var(--white);
-      color: var(--black);
-      border-radius: 12px;
-    }
-
-    .sign-up:hover {
-      background-color: #1d1d1d;
-      color: #bea69e;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .sign-up a {
-      padding: 16px 58px 16px 58px;
-      font-family: var(--dmsans);
-      font-size: 18px;
-      line-height: 28px;
-      font-weight: 700;
-    }
-
-   
-}
-
-@media screen and (max-width: 375px){
-         header {
-          background-color: var(--black);
-          color: var(--white);
-          /* height: 100px; */
-          display: flex;
-          flex-direction: column;
-        }
-      
-        .header {
-          margin: 20px 32px 0 32px;
-          display: flex;
-        }
-
-        .nav-logo-title{
-          height: auto;
-        }
-
-        .menu-nav{
-          width: 335px;
-        }
-        .div-nav {
-          display:flex;
-          padding: 16px 20px 16px 16px;
-          border-radius: 12px;
-          border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-      
-        .header-menu-btn {
-          display: block;
-          margin-left: auto;
-          background-color: var(--black);
-          border: none;
-          cursor: pointer;
-      
-        }
-        .hero {
-          display: flex;
-        }
-        .hero {
-          width: 100%;
-          height: 777px;
-          flex: 1 auto;
-          flex-wrap: wrap;
-        }
-        .hero-row3{
-          margin-top: 140px;
-        }
-        .hero-row3-col1{
-          width: 109px;
-          height: 100%;
-        }
-        .happyStudents {
-          display: none;
-        }
-        .happyStudents_Mobile {
-          display: block;
-        }
-        .hero-row3-col2{
-          width: 82px;
-          height: 100%;
-        }
-        .hero-row3-col4 {
-          margin-left: -60px;
-        }
-        .hero-col2 .photographer{
-          display: none;
-        }
-        .hero-col2 {
-          min-width: 704px;
-          height:auto;
-          justify-content:center ;
-        }
-        .hero-col2 .photographer_Mobile {
-          display: inline;
-          margin-top: -210px;
-          flex: auto;
-        }
-        .hero-col2 .photographer_Tablet {
-          display: none;
-        }
-        .mobile-sign-up {
-          align-items: center;
-          justify-self: center;
-          width: 32px;
-          height: 32px;
-          padding: 8px;
-          display: flex;
-          background-color: #1d1d1d;
-          border-radius: 50px;
-        }
-        .mobile-sign-up-svg{
-          fill: rgba(190, 166, 158, 0.4);
-          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .mobile-sign-up:hover .mobile-sign-up-svg{
-          fill: var(--brown);
-        }
-      
-        .menu-nav {
-          display: flex;
-          position: relative;
-          z-index: 1;
-          /* İçeriğin üstte kalması için */
-          color: white;
-          /* Yazı rengini beyaz yap */
-          text-align: center;
-        }
-
-      
-        .nav-menu-list {
-          display: none;
-          position: absolute;
-          top: 100%;
-          right: 2%;
-        }
-      
-        .nav-menu-list li {
-          font-family: var(--dmsans);
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 18.23px;
-          text-transform: uppercase;
-        }
-      
-        .nav-menu-list li a:hover {
-          color: #bea69e;
-          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-      
-        .sign-up {
-          display: none;
-          justify-content: center;
-          align-items: center;
-          /* margin: auto; */
-          background-color: var(--white);
-          color: var(--black);
-          border-radius: 12px;
-        }
-      
-        .sign-up:hover {
-          background-color: #1d1d1d;
-          color: #bea69e;
-          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-      
-        .sign-up a {
-          padding: 16px 58px 16px 58px;
-          font-family: var(--dmsans);
-          font-size: 18px;
-          line-height: 28px;
-          font-weight: 700;
-        }
-
-        .mobile-sign-up:hover{
-          color: #1d1d1d;
-        }
-}
-
-/* ABOUT US*/
-
+/* Hero Bitiş */
+/* ABOUT US Başlangıç*/
 .aboutus {
   width: 1440px;
   padding: 150px 100px;
@@ -675,7 +309,7 @@ header {
   font-weight: 500;
   font-size: 48px;
   line-height: 54px;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
 }
 .au-title span {
   color: var(--brown);
@@ -701,7 +335,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.04em;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -712,11 +346,12 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.04em;
   padding-top: 10px;
   padding-bottom: 15px;
 }
-
+/* About Us Bitiş */
+/* Our courses Başlangıç */
 .our-courses-section {
   width: 100%;
   background-color: var(--gray);
@@ -829,7 +464,9 @@ header {
   font-size: 16px;
   font-weight: 400;
   flex: 1;
-} /* Umut Can // Our mentors Kısmı */
+}
+/* Our Courses Bitiş */
+/* Umut Can // Our mentors Başlangıç */
 .our-mentors {
   display: flex;
   flex-direction: column;
@@ -848,7 +485,7 @@ header {
   font-weight: 500;
   color: var(--white);
   line-height: 54px;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
   margin-bottom: 10px;
 }
 .our-mentor-span {
@@ -889,7 +526,7 @@ header {
   white-space: nowrap;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   font-weight: 400;
 }
 .our-mentor-name-title,
@@ -898,7 +535,8 @@ header {
   max-width: 150px;
   white-space: nowrap;
 }
-/*Sign Up min-width:1281*/
+/* Our Mentors Bitişi */
+/* Sign Up Başlangıç */
 .sing-up {
   width: 1240px;
   height: 578px;
@@ -907,7 +545,6 @@ header {
   font-family: var(--dmsans);
   left: 100px;
   gap: 200px;
-  
 }
 
 .form-content {
@@ -922,7 +559,7 @@ header {
   font-weight: 500;
   font-size: 48px;
   line-height: 54px;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
   color: var(--white);
 }
 .form-content span {
@@ -936,7 +573,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   color: var(--white);
 }
 .input-name {
@@ -1036,312 +673,8 @@ form button:hover {
   top: 139px;
   left: 258px;
 }
-
-@media screen and (min-width: 769px) and (max-width: 1280px) {
-  
-  .sing-up {
-    width: 1080px;
-    height: 578px;
-    background-color: var(--black);
-    font-family: var(--dmsans);
-    left: 100px;
-    gap: 60px;
-  }
-
-  .form-content {
-    width: 480px;
-    height: 578px;
-    color: var(--white);
-  }
-  .form-content h2 {
-    width: 159px;
-    height: 54px;
-    font-family: var(--dmsans);
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 54px;
-    letter-spacing: -4%;
-    color: var(--white);
-  }
-  .form-content span {
-    color: var(--brown);
-  }
-  .form-content p {
-    width: 480px;
-    height: 40px;
-    top: 74px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -2%;
-  }
-  .input-name {
-    width: 480px;
-    height: 60px;
-    top: 154px;
-    padding-left: 18px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-  }
-  .input-email {
-    width: 480px;
-    height: 60px;
-    top: 228px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-    padding-left: 18px;
-  }
-  form textarea {
-    width: 480px;
-    height: 120px;
-    top: 302px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-    padding-left: 18px;
-    padding-top: 18px;
-  }
-  form button {
-    width: 479px;
-    height: 60px;
-    top: 462px;
-    left: 0px;
-    border-radius: 12px;
-    padding-top: 16px;
-    padding-right: 216px;
-    padding-bottom: 16px;
-    padding-left: 216px;
-    background-color: white;
-  }
-  .form-content .privacy-text {
-    width: 480px;
-    height: 36px;
-    top: 542px;
-    gap: 12px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #ffffff80;
-  }
-  .image-section {
-    width: 540px;
-    height: 540px;
-  }
-  .lens-img {
-    width: 150px;
-    height: 142px;
-    top: 60%;
-  }
-  .lens-bg-img {
-    background-color: var(--brown);
-    width: 180px;
-    height: 288px;
-    top: 252px;
-    border-radius: 1000px;
-  }
-  .camera-bg-img {
-    background-color: var(--gray);
-    width: 340px;
-    height: 540px;
-    left: 200px;
-  }
-  .camera-img {
-    width: 240px;
-    height: 296px;
-    top: 156px;
-    left: 250px;
-  }
-}
-/*Tablet*/
-@media screen and (min-width: 376px) and (max-width: 768px) {
-  body {
-    position: relative;
-  }
-  .sing-up {
-    background-color: var(--black);
-  }
-  .form-content {
-    width: 480px;
-    height: 577px;
-    position: absolute;
-    left: 32px;
-    color: var(--white);
-    background-color: var(--black);
-  }
-  .form-sign-up {
-    width: 480px;
-    height: 423px;
-    position: relative;
-    top: 154px;
-    background-color: var(--black);
-  }
-  .form-content h2 {
-    width: 159px;
-    height: 54px;
-    font-family: var(--dmsans);
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 54px;
-    letter-spacing: -4%;
-    color: var(--white);
-  }
-  .form-content span {
-    color: var(--brown);
-  }
-  .form-content p {
-    width: 480px;
-    height: 40px;
-    top: 74px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -2%;
-  }
-  .input-name {
-    width: 480px;
-    height: 60px;
-    padding-left: 18px;
-    top: 0px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-  }
-  .input-email {
-    width: 480px;
-    height: 60px;
-    top: 74px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-    padding-left: 18px;
-  }
-  form textarea {
-    width: 480px;
-    height: 119px;
-    top: 148px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-    padding-left: 18px;
-    padding-top: 18px;
-  }
-  form button {
-    width: 479px;
-    height: 60px;
-    top: 307px;
-    border-radius: 12px;
-    padding-top: 16px;
-    padding-right: 216px;
-    padding-bottom: 16px;
-    padding-left: 216px;
-    background-color: white;
-  }
-  .form-content .privacy-text {
-    width: 480px;
-    height: 36px;
-    top: 387.71px;
-    gap: 12px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #ffffff80;
-  }
-  .image-section {
-    visibility: hidden;
-  }
-}
-/*mobile*/
-
-@media screen and (max-width: 375px) {
-  .form-content {
-    width: 335px;
-    height: 523px;
-    position: relative;
-    left: 20px;
-    color: var(--white);
-    background-color: var(--black);
-  }
-  .form-content h2 {
-    width: 98px;
-    height: 32px;
-    font-family: var(--dmsans);
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: -4%;
-    color: var(--white);
-    top: 52px;
-  }
-  .form-content span {
-    color: var(--brown);
-  }
-  .form-content p {
-    width: 295px;
-    height: 54px;
-    top: 52px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -2%;
-  }
-  .input-name {
-    width: 335px;
-    height: 46px;
-    padding-left: 14px;
-    top: 147px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-  }
-  .input-email {
-    width: 335px;
-    height: 46px;
-    top: 201px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-    padding-left: 14px;
-  }
-  form textarea {
-    width: 335px;
-    height: 112px;
-    top: 255px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-    padding-left: 14px;
-    padding-top: 14px;
-  }
-  form button {
-    width: 335px;
-    height: 48px;
-    top: 407px;
-    border-radius: 12px;
-    padding-top: 14px;
-    padding-right: 127px;
-    padding-bottom: 14px;
-    padding-left: 127px;
-    background-color: white;
-  }
-  .form-content .privacy-text {
-    width: 335px;
-    height: 48px;
-    top: 475px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #ffffff80;
-  }
-  .image-section {
-    visibility: hidden;
-  }
-}
-
-body {
-  background-color: #121212;
-}
+/* Sign Up Bitişi */
+/* Reviews Başlangıç */
 .reviews {
   display: flex;
   justify-content: space-between;
@@ -1442,9 +775,11 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
+/* Reviews Bitişi */
+/* Footer Başlangıç */
 footer {
   /* background-color: var(--black); */
-  
+
   color: var(--white);
   padding: 40px 20px;
   text-align: left;
@@ -1563,252 +898,52 @@ footer {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  width: 400;
   line-height: 18px;
-  display: flex;
 }
 
 .footer-bottom a:hover {
   color: var(--brown);
 }
-.privacy-policy{
-  flex:1;
+.privacy-policy {
+  flex: 1;
 }
 .copyright {
-  
   float: right;
-  margin-right:100px;
+  margin-right: 100px;
 }
-@media screen and (max-width: 375px) {
-  header {
-      background-color: var(--black);
-      color: var(--white);
-      /* height: 100px; */
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .header {
-      margin: 20px 32px 0 32px;
-      display: flex;
-    }
- 
-    .nav-logo-title{
-      height: auto;
-    }
- 
-    .menu-nav{
-      width: 335px;
-    }
-    .div-nav {
-      display:flex;
-      padding: 16px 20px 16px 16px;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-  
-    .header-menu-btn {
-      display: block;
-      margin-left: auto;
-      background-color: var(--black);
-      border: none;
-      cursor: pointer;
-  
-    }
-  
-    .mobile-sign-up {
-      align-items: center;
-      justify-self: center;
-      width: 32px;
-      height: 32px;
-      padding: 8px;
-      display: flex;
-      background-color: #1d1d1d;
-      border-radius: 50px;
-    }
-    .mobile-sign-up-svg{
-      fill: rgba(190, 166, 158, 0.4);
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
- 
-    .mobile-sign-up:hover .mobile-sign-up-svg{
-      fill: var(--brown);
-    }
-  
-    .menu-nav {
-      display: flex;
-      position: relative;
-      z-index: 1;
-      /* İçeriğin üstte kalması için */
-      color: white;
-      /* Yazı rengini beyaz yap */
-      text-align: center;
-    }
- 
-  
-    .nav-menu-list {
-      display: none;
-      position: absolute;
-      top: 100%;
-      right: 2%;
-    }
-  
-    .nav-menu-list li {
-      font-family: var(--dmsans);
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 18.23px;
-      text-transform: uppercase;
-    }
-  
-    .nav-menu-list li a:hover {
-      color: #bea69e;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  
-    .sign-up {
-      display: none;
-      justify-content: center;
-      align-items: center;
-      /* margin: auto; */
-      background-color: var(--white);
-      color: var(--black);
-      border-radius: 12px;
-    }
-  
-    .sign-up:hover {
-      background-color: #1d1d1d;
-      color: #bea69e;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  
-    .sign-up a {
-      padding: 16px 58px 16px 58px;
-      font-family: var(--dmsans);
-      font-size: 18px;
-      line-height: 28px;
-      font-weight: 700;
-    }
- 
-    .mobile-sign-up:hover{
-      color: #1d1d1d;
-    }
-  .form-content {
-    width: 335px;
-    height: 523px;
-    position: relative;
-    left: 20px;
-    color: var(--white);
-    background-color: var(--black);
-  }
-  .form-content h2 {
-    width: 98px;
-    height: 32px;
-    font-family: var(--dmsans);
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: -4%;
-    color: var(--white);
-    top: 52px;
-  }
-  .form-content span {
-    color: var(--brown);
-  }
-  .form-content p {
-    width: 295px;
-    height: 54px;
-    top: 52px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -2%;
-  }
-  .input-name {
-    width: 335px;
-    height: 46px;
-    padding-left: 14px;
-    top: 147px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-  }
-  .input-email {
-    width: 335px;
-    height: 46px;
-    top: 201px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-    padding-left: 14px;
-  }
-  form textarea {
-    width: 335px;
-    height: 112px;
-    top: 255px;
-    border-radius: 12px;
-    border: 1px solid #ffffff33;
-    background-color: var(--black);
-    padding-left: 14px;
-    padding-top: 14px;
-  }
-  form button {
-    width: 335px;
-    height: 48px;
-    top: 407px;
-    border-radius: 12px;
-    padding-top: 14px;
-    padding-right: 127px;
-    padding-bottom: 14px;
-    padding-left: 127px;
-    background-color: white;
-  }
-  .form-content .privacy-text {
-    width: 335px;
-    height: 48px;
-    top: 475px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #ffffff80;
-  }
-  .image-section {
-    visibility: hidden;
-  }
-}
-
-
-@media screen and (min-width: 376px) and (max-width: 768px){
+/* Footer Bitişi */
+/* Media bölümü 375-767 Mobilden > Tablete kadar Olan bölüm */
+@media screen and (min-width: 375px) and (max-width: 767px) {
   header {
     background-color: var(--black);
     color: var(--white);
-    /* height: 100px; */
     display: flex;
     flex-direction: column;
   }
-
   .header {
     margin: 20px 32px 0 32px;
     display: flex;
   }
-
+  .nav-logo-title {
+    height: auto;
+  }
+  .menu-nav {
+    width: 335px;
+  }
   .div-nav {
-    width: 504px;
-    display: inline-flex;
-    padding: 16px 20px 16px 20px;
+    display: flex;
+    padding: 16px 20px 16px 16px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
-
-   .header-menu-btn {
+  .header-menu-btn {
     display: block;
     margin-left: auto;
     background-color: var(--black);
     border: none;
     cursor: pointer;
-
   }
-  .mobil-sign-up{
+  .mobil-sign-up {
     display: none;
   }
   .menu-nav {
@@ -1820,13 +955,18 @@ footer {
     /* Yazı rengini beyaz yap */
     text-align: center;
   }
-
-  .header-logo-icon{
+  .nav-menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 2%;
+  }
+  .header-logo-icon {
     margin-right: 301px;
   }
   .nav-menu-list {
     display: none;
-    position:absolute;
+    position: absolute;
     top: 100%;
     right: 2%;
     width: 270px;
@@ -1835,9 +975,8 @@ footer {
     flex-direction: column;
     justify-self: flex-start;
     border-radius: 10px;
-    transition: all .50sn ease;
+    transition: all 0.5sn ease;
   }
-
   .nav-menu-list li {
     font-family: var(--dmsans);
     font-size: 14px;
@@ -1845,14 +984,13 @@ footer {
     line-height: 18.23px;
     text-transform: uppercase;
   }
-
   .nav-menu-list li a:hover {
     color: #bea69e;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .sign-up {
-    display:flex;
+    display: none;
     justify-content: center;
     align-items: center;
     /* margin: auto; */
@@ -1860,13 +998,11 @@ footer {
     color: var(--black);
     border-radius: 12px;
   }
-
   .sign-up:hover {
     background-color: #1d1d1d;
     color: #bea69e;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
   .sign-up a {
     padding: 16px 58px 16px 58px;
     font-family: var(--dmsans);
@@ -1874,105 +1010,177 @@ footer {
     line-height: 28px;
     font-weight: 700;
   }
+  .mobile-sign-up {
+    align-items: center;
+    justify-self: center;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    display: flex;
+    background-color: #1d1d1d;
+    border-radius: 50px;
+  }
+  .mobile-sign-up-svg {
+    fill: rgba(190, 166, 158, 0.4);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-sign-up:hover .mobile-sign-up-svg {
+    fill: var(--brown);
+  }
+  .mobile-sign-up {
+    align-items: center;
+    justify-self: center;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    display: flex;
+    background-color: #1d1d1d;
+    border-radius: 50px;
+  }
+  .hero {
+    display: flex;
+  }
+  .hero {
+    width: 100%;
+    height: 900px;
+    flex: 1 auto;
+    flex-wrap: wrap;
+  }
+  .hero-row3 {
+    margin-top: 140px;
+  }
+  .hero-row3-col1 {
+    width: 137px;
+    height: 100%;
+  }
+  .happyStudents {
+    display: block;
+  }
+  .happyStudents_Mobile {
+    display: none;
+  }
+  .hero-row3-col2 {
+    width: 82px;
+    height: 100%;
+  }
+  .hero-row3-col4 {
+    margin-left: -60px;
+  }
+  .hero-col2 .photographer {
+    display: none;
+  }
+  .hero-col2 {
+    min-width: 704px;
+    height: auto;
+    justify-content: center;
+  }
+  .hero-col2 .photographer_Tablet {
+    display: inline;
+    margin-top: -210px;
+    flex: auto;
+  }
+  .hero-col2 .photographer_Mobile {
+    display: none;
+  }
   body {
-      position: relative;
-    }
-    .sing-up {
-      background-color: var(--black);
-    }
-    .form-content {
-      width: 480px;
-      height: 577px;
-      position: absolute;
-      left: 32px;
-      color: var(--white);
-      background-color: var(--black);
-    }
-    .form-sign-up {
-      width: 480px;
-      height: 423px;
-      position: relative;
-      top: 154px;
-      background-color: var(--black);
-    }
-    .form-content h2 {
-      width: 159px;
-      height: 54px;
-      font-family: var(--dmsans);
-      font-weight: 500;
-      font-size: 48px;
-      line-height: 54px;
-      letter-spacing: -4%;
-      color: var(--white);
-    }
-    .form-content span {
-      color: var(--brown);
-    }
-    .form-content p {
-      width: 480px;
-      height: 40px;
-      top: 74px;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      letter-spacing: -2%;
-    }
-    .input-name {
-      width: 480px;
-      height: 60px;
-      padding-left: 18px;
-      top: 0px;
-      border-radius: 12px;
-      border: 1px solid #ffffff33;
-      background-color: var(--black);
-    }
-    .input-email {
-      width: 480px;
-      height: 60px;
-      top: 74px;
-      border-radius: 12px;
-      border: 1px solid #ffffff33;
-      background-color: var(--black);
-      padding-left: 18px;
-    }
-    form textarea {
-      width: 480px;
-      height: 119px;
-      top: 148px;
-      border-radius: 12px;
-      border: 1px solid #ffffff33;
-      background-color: var(--black);
-      padding-left: 18px;
-      padding-top: 18px;
-    }
-    form button {
-      width: 479px;
-      height: 60px;
-      top: 307px;
-      border-radius: 12px;
-      padding-top: 16px;
-      padding-right: 216px;
-      padding-bottom: 16px;
-      padding-left: 216px;
-      background-color: white;
-    }
-    .form-content .privacy-text {
-      width: 480px;
-      height: 36px;
-      top: 387.71px;
-      gap: 12px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 18px;
-      color: #ffffff80;
-    }
-    .image-section {
-      visibility: hidden;
-    }
- 
+    position: relative;
+  }
+  .input-name {
+    width: 480px;
+    height: 60px;
+    padding-left: 18px;
+    top: 0px;
+    border-radius: 12px;
+    border: 1px solid #ffffff33;
+    background-color: var(--black);
+  }
+  .input-email {
+    width: 480px;
+    height: 60px;
+    top: 74px;
+    border-radius: 12px;
+    border: 1px solid #ffffff33;
+    background-color: var(--black);
+    padding-left: 18px;
+  }
+  form textarea {
+    width: 480px;
+    height: 119px;
+    top: 148px;
+    border-radius: 12px;
+    border: 1px solid #ffffff33;
+    background-color: var(--black);
+    padding-left: 18px;
+    padding-top: 18px;
+  }
+  form button {
+    width: 479px;
+    height: 60px;
+    top: 307px;
+    border-radius: 12px;
+    padding-top: 16px;
+    padding-right: 216px;
+    padding-bottom: 16px;
+    padding-left: 216px;
+    background-color: white;
+  }
+  .form-content {
+    width: 480px;
+    height: 577px;
+    position: absolute;
+    left: 32px;
+    color: var(--white);
+    background-color: var(--black);
+  }
+  .form-sign-up {
+    width: 480px;
+    height: 423px;
+    position: relative;
+    top: 154px;
+    background-color: var(--black);
+  }
+  .form-content h2 {
+    width: 159px;
+    height: 54px;
+    font-family: var(--dmsans);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -4%;
+    color: var(--white);
+  }
+  .form-content span {
+    color: var(--brown);
+  }
+  .form-content p {
+    width: 480px;
+    height: 40px;
+    top: 74px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -2%;
+  }
+  .form-content .privacy-text {
+    width: 480px;
+    height: 36px;
+    top: 387.71px;
+    gap: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff80;
+  }
+  .image-section {
+    visibility: hidden;
+  }
 }
-
-@media screen and (min-width: 769px) and (max-width: 1280px) {
+/* Media bölümü 375-767 Mobilden > Tablete Bölümün Bitişi */
+/* Media bölümü 768-1279 Tabletten > Desktop'a Bölüm Başlangıcı */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  body {
+    position: relative;
+  }
   .sing-up {
     width: 1080px;
     height: 578px;
@@ -1981,11 +1189,20 @@ footer {
     left: 100px;
     gap: 60px;
   }
-
   .form-content {
     width: 480px;
-    height: 578px;
+    height: 577px;
+    position: absolute;
+    left: 32px;
     color: var(--white);
+    background-color: var(--black);
+  }
+  .form-sign-up {
+    width: 480px;
+    height: 423px;
+    position: relative;
+    top: 154px;
+    background-color: var(--black);
   }
   .form-content h2 {
     width: 159px;
@@ -2088,3 +1305,8 @@ footer {
     left: 250px;
   }
 }
+/* Media bölümü 768-1279 Tabletten > Desktop'a Bölüm Bitişi */
+/* Media Bölümü 1439-1280 1440<1280 Aralığında değişken medialar Bölümü*/
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+}
+/* Media Bölümü 1439-1280 1440<1280 Aralığında değişken medialar Bölümü bitişi  */
