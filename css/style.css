@@ -501,6 +501,7 @@ header {
 /* Our Mentors Bitişi */
 
 /* Sign Up Başlangıç */
+
 .sing-up {
   width: 1240px;
   height: 578px;
@@ -510,7 +511,9 @@ header {
   margin: auto;
   gap: 200px;
 }
-
+.privacy-text a{
+  text-decoration: underline;
+}
 .form-content {
   width: 480px;
   height: 578px;
@@ -579,6 +582,7 @@ form textarea {
   height: 60px;
   position: absolute;
   left: 0px;
+  top: 462px;
   border-radius: 12px;
   padding-top: 16px;
   padding-right: 216px;
@@ -1335,7 +1339,6 @@ footer {
   .form-sign-up {
     width: 480px;
     height: 423px;
-    position: relative;
     top: 154px;
     background-color: var(--black);
   }
@@ -1814,6 +1817,19 @@ footer {
   .stars-image {
     margin-top: 10px;
   }
+  .form-sign-up button {
+    width: 479px;
+    height: 60px;
+    position: absolute;
+    left: 0px;
+    top: 307px;
+    border-radius: 12px;
+    padding-top: 16px;
+    padding-right: 216px;
+    padding-bottom: 16px;
+    padding-left: 216px;
+    background-color: white;
+}
 }
 
 /*mobile*/
@@ -1870,6 +1886,9 @@ footer {
     margin-left: 66px;
     gap: 4px;
     margin-top: 60px;
+  }
+  .image-section{
+    display: none;
   }
 }
 
