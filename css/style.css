@@ -938,7 +938,7 @@ footer {
     flex-direction: column;
     justify-self: flex-start;
     border-radius: 10px;
-    transition: all 0.5sn ease;
+    transition: all 0.5s ease;
   }
   .nav-menu-list li {
     font-family: var(--dmsans);
@@ -1008,10 +1008,10 @@ footer {
     flex-wrap: wrap;
   }
   .hero-row1 h1 {
-    font-size: calc(width/64) px;
+    font-size: calc(400vw / 64);
   }
   .hero-row1 h1 .photography-text {
-    font-size: calc(width/64) px;
+    font-size: calc(400vw / 64);
   }
 
   .hero-row3 {
@@ -1122,7 +1122,7 @@ footer {
     font-weight: 500;
     font-size: 48px;
     line-height: 54px;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     color: var(--white);
   }
   .form-content span {
@@ -1135,7 +1135,7 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
   }
   .form-content .privacy-text {
     width: 480px;
@@ -1166,10 +1166,10 @@ footer {
     flex-wrap: wrap;
   }
   .hero-row1 h1 {
-    font-size: calc(width/64) px;
+    font-size: calc(400vw / 64);
   }
   .hero-row1 h1 .photography-text {
-    font-size: calc(width/64) px;
+    font-size: calc(400vw / 64);
   }
 
   .hero-row3 {
@@ -1245,7 +1245,7 @@ footer {
     font-weight: 500;
     font-size: 48px;
     line-height: 54px;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     color: var(--white);
   }
   .form-content span {
@@ -1258,7 +1258,7 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
   }
   .input-name {
     width: 480px;
@@ -1406,7 +1406,7 @@ footer {
   /* About Us Bitişi */
 }
 /* Media bölümü 768-1279 Tabletten > Desktop'a Bölüm Bitişi */
-/* Media Bölümü 1439-1280 1440<1280 Aralığında değişken medialar Bölümü*/
+/* Media Bölümü 1439-1280 1440 <1280 Aralığında değişken medialar Bölümü*/
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   /* About Us Başlangıç */
   .aboutus {
