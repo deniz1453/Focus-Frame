@@ -1755,57 +1755,65 @@ footer {
 /* Reviews Media Alanı */
 /*Tablet*/
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  body {
-    position: relative;
-  }
-
   .reviews {
-    width: 704px;
-    height: 300px;
-    top: 100px;
-    left: 32px;
-    gap: 0px;
-    opacity: 0px;
+    width: 100%;
+    max-width: 704px;
+    height: auto;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .person-review {
+    display: flex;
+    justify-content: center; /* Kartı ortalamak için */
     position: relative;
   }
 
-  .amanda-border {
-    visibility: hidden;
-  }
-
+  /* Abraham kartı ayarları */
   .person-review .abraham-border {
-    width: 640px;
-    height: 196px;
-    top: 104px;
-    left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 335px; /* Maksimum genişlik */
+    min-width: 280px; /* Minimum genişlik */
+    height: auto;
+    max-height: 244px; /* Maksimum yükseklik */
+    min-height: 200px; /* Minimum yükseklik */
     margin: 0 auto;
-    position: absolute;
+    padding: 20px;
+    position: relative;
+    z-index: 1; /* Abraham kartı öne çıkarmak için */
   }
 
-  #reviews p {
-    width: 600px;
-    height: 80px;
-    top: 200px;
-    left: 52px;
-    gap: 0px;
-    opacity: 0px;
+  /* Amanda kartı gizle ve alan kaplamasını engelle */
+  .person-review .amanda-border {
+    display: none; /* Tamamen gizle */
+  }
+
+  .reviews-h2 {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .reviews-h3 {
+    text-align: left;
+    margin-top: 8px;
   }
 
   .reviews-p {
-    margin-top: 20px;
-    text-align: justify;
-    font-family: DM Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: -0.02em;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    word-wrap: break-word; /* Uzun kelimeleri satıra sığdır */
+    overflow-wrap: break-word; /* Taşmayı önle */
+    word-break: break-word; /* Gerekirse kelimeleri böl */
+    max-width: 100%; /* Yazıyı kutu içinde tut */
+    margin-top: 10px; /* Üstten biraz boşluk */
   }
 
-  .person-review .stars-image {
-    width: 116px;
-    height: 20px;
-    margin-left: 488px;
-    gap: 4px;
+  .stars-image {
+    margin-top: 10px;
   }
 }
 
@@ -1830,17 +1838,18 @@ footer {
 
   .reviews {
     width: 335px;
-    height: 316px;
-    top: 5122px;
+    min-height: 316px;
     left: 20px;
     padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex: 1;
   }
-
   .person-review .abraham-border {
-    width: 335px;
-    height: 244px;
-    top: 5122px;
+    max-width: 335px;
+    max-height: 244px;
     left: 20px;
+    display: flex;
   }
 
   #reviews p {
@@ -1866,13 +1875,23 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .amanda-border {
+    visibility: hidden;
+  }
+  #reviews {
+    margin: auto;
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    width: 704px;
+    height: 300px;
+  }
 }
-
 .reviews {
+  margin: auto;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 1080px;
-  height: 320px;
   margin-left: 100px;
   margin-top: 50px;
 }
